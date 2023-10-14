@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+    <!-- All Meta Information -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Sexual Health Website" />
+    <meta
+      name="keywords"
+      content="Sex Education,Sexual Health,Healthy Relationships,Puberty Education, PregEdu, Pregnancy Guide Web App, Pregnancy Blogs, Pregnancy Cycle, Pregnancy Report Check"
+    />
+    <meta
+      name="author"
+      content="Vismaya, Varun, Khushi, Arun"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page Title -->
+    <title>SexEdu</title>
+
+    <!-- Favicon Icon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+
+    <!-- Google Font Style -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google Icon -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawesome Icon -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="dist/css/main.css" />
+
+    <!-- External JS -->
+    <script src="dist/js/main.js"></script>
+
+    <!-- Head Closing -->
+  </head>
+
+  <body>
+    <!-- Main Body  -->
+
+    <!-- Header -->
+    <header>
+      <!-- Navbar Starts-->
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo active">SexEdu</label>
+        <ul class="nav-item">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="faq.html">FAQ</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Navbar Closing-->
+    </header>
+    <!-- Header Closing -->
+
+    <!-- Main Starting-->
+    <main class="main-heading">
+      <h1 class="content-heading">FAQ</h1>
+    </main>
+    <!-- Main Closing-->
+    <div class="accordion-container">
+      <div class="accordion">
+        <div class="accordion-header">
+          <button class="accordion-toggle">What is SexEdu?</button>
+        </div>
+        <div class="accordion-body">
+          <p>SexEdu is an online platform that offers comprehensive education, resources, and guidance for individuals seeking knowledge and understanding about healthy and responsible sexual practices.SexEdu aims to empower individuals to make informed decisions, foster healthy relationships, and promote overall sexual well-being.</p>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header">
+          <button class="accordion-toggle">Is SexEdu free to use?</button>
+        </div>
+        <div class="accordion-body">
+           <p>Absolutely, SexEdu is an inclusive and accessible platform for everyone.At SexEdu, we are committed to breaking barriers and ensuring that everyone, regardless of their circumstances, can access the knowledge and support they need to make informed decisions about their sexual health and relationships.</p>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header">
+          <button class="accordion-toggle">Is the health check feature a substitute for seeing a doctor?</button>
+        </div>
+        <div class="accordion-body">
+          <p>No, the health check feature is not a substitute for seeing a doctor. It is designed to help you monitor your health and provide recommendations based on your symptoms. It is important to always consult with your healthcare provider for medical advice and guidance.</p>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header">
+          <button class="accordion-toggle">How can I join the SexEdu community?</button>
+        </div>
+        <div class="accordion-body">
+          <p>To join the SexEdu community, simply click on the "Community" button on the community page of our website. You will be redirected to a polls section. You can share your opinions in this section. </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accordian JavaScript For FAQ Page Starting -->
+    <script>
+      const accordions = document.querySelectorAll(".accordion");
+
+      accordions.forEach((accordion) => {
+        const header = accordion.querySelector(".accordion-header");
+        const body = accordion.querySelector(".accordion-body");
+
+        header.addEventListener("click", () => {
+          accordion.classList.toggle("active");
+          if (accordion.classList.contains("active")) {
+            body.style.maxHeight = body.scrollHeight + "px";
+          } else {
+            body.style.maxHeight = 0;
+          }
+        });
+      });
+    </script>
+    <!-- Accordian JavaScript For FAQ Page Ending -->
+
+    <!-- Body Closing   -->
+  </body>
+
+  <!-- HTML Closing  -->
+</html>

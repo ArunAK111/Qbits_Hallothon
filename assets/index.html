@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+    <!-- All Meta Information -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Sexual Health Website" />
+    <meta
+      name="keywords"
+      content="Sex Education,Sexual Health,Healthy Relationships,Puberty Education, PregEdu, Pregnancy Guide Web App, Pregnancy Blogs, Pregnancy Cycle, Pregnancy Report Check"
+    />
+    <meta
+      name="author"
+      content="Vismaya, Varun, Khushi, Arun"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page Title -->
+    <title>SexEdu</title>
+
+    <!-- Favicon Icon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+
+    <!-- Google Font Style -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google Icon -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawesome Icon -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="dist/css/main.css" />
+
+    <!-- External JS -->
+    <script src="dist/js/main.js"></script>
+
+    <!-- Head Closing -->
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <!-- <div class="spinnerContainer" id="loading">
+      <div class="lds-roller" id="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div> -->
+    <!-- Main Body  -->
+
+    <!-- Header -->
+    <header>
+      <!-- Navbar Starts-->
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo active">SexEdu</label>
+        <ul class="nav-item">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="faq.html">FAQ</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Navbar Closing-->
+    </header>
+    <!-- Header Closing -->
+
+    <!-- Main Starting-->
+    <main class="main-heading">
+      <h1 class="content-heading">Choose Your Path</h1>
+    </main>
+    <!-- Main Closing-->
+
+    <!-- Landing Page Cards Starts-->
+    <section class="cards-section">
+      <div class="container-cards-section">
+        <div class="card-container">
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="assets/educate.jpg"
+                alt="Educate Yourself"
+              />
+            </div>
+            <div class="card-footer">
+              <p>Educate Yourself</p>
+            </div>
+            <button
+              onclick="window.location.href = 'blogs.html';"
+              class="card-button"
+            >
+              Explore
+            </button>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="assets/health_check.jpg" alt="Health Test" />
+            </div>
+            <div class="card-footer">
+              <p>Health Test</p>
+            </div>
+            <button
+              onclick="window.location.href = 'start.html';"
+              class="card-button"
+            >
+              Start
+            </button>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="assets/community.jpg"
+                accesskey="Community"
+              />
+            </div>
+            <div class="card-footer">
+              <p>Community</p>
+            </div>
+            <button
+              onclick="window.location.href = 'https://groups.google.com/g/pregedu-group';"
+              class="card-button"
+            >
+              Join
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Landing Page Cards Ends-->
+    <!-- chatbot button  -->
+    <!--       <div class="floating-button" onclick="openChat()">
+        <i class="material-icons">Chat</i>
+      </div> -->
+    <!-- chatbot button ending       -->
+    <!-- Landing Page Cards Ends-->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      chat-title="Saheli"
+      agent-id="ca15b9b8-4dcc-45b8-a32a-74170736b9af"
+      language-code="en"
+    ></df-messenger>
+    <!-- Body Closing   -->
+  </body>
+
+  <!-- HTML Closing  -->
+</html>
